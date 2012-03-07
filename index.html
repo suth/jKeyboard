@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>jKeyboard</title>
+	<meta name="viewport" content="width=1280, user-scalable=no"/>  
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="screen">
+	<p><span id="text"></span><span id="cursor">|</span></p>
+</div>
+
+<div id="keys">
+	<div class="row">
+		<button data-key-value="`" data-secondary-value="~">~<br>`</button>
+		<button data-key-value="1" data-secondary-value="!">!<br>1</button>
+		<button data-key-value="2" data-secondary-value="@">@<br>2</button>
+		<button data-key-value="3" data-secondary-value="#">#<br>3</button>
+		<button data-key-value="4" data-secondary-value="$">$<br>4</button>
+		<button data-key-value="5" data-secondary-value="%">%<br>5</button>
+		<button data-key-value="6" data-secondary-value="^">^<br>6</button>
+		<button data-key-value="7" data-secondary-value="&">&<br>7</button>
+		<button data-key-value="8" data-secondary-value="*">*<br>8</button>
+		<button data-key-value="9" data-secondary-value="(">(<br>9</button>
+		<button data-key-value="0" data-secondary-value=")">)<br>0</button>
+		<button data-key-value="-" data-secondary-value="_">_<br>-</button>
+		<button data-key-value="=" data-secondary-value="+">+<br>=</button>
+		<button class="delete">delete</button>
+	</div>
+	<div class="row">
+		<button class="tab">tab</button>
+		<button data-key-value="q">Q</button>
+		<button data-key-value="w">W</button>
+		<button data-key-value="e">E</button>
+		<button data-key-value="r">R</button>
+		<button data-key-value="t">T</button>
+		<button data-key-value="y">Y</button>
+		<button data-key-value="u">U</button>
+		<button data-key-value="i">I</button>
+		<button data-key-value="o">O</button>
+		<button data-key-value="p">P</button>
+		<button data-key-value="[" data-secondary-value="{">{<br>[</button>
+		<button data-key-value="]" data-secondary-value="}">}<br>]</button>
+		<button data-key-value="\" data-secondary-value="|">|<br>\</button>
+	</div>
+	<div class="row">
+		<button class="caps-lock">caps lock</button>
+		<button data-key-value="a">A</button>
+		<button data-key-value="s">S</button>
+		<button data-key-value="d">D</button>
+		<button data-key-value="f">F</button>
+		<button data-key-value="g">G</button>
+		<button data-key-value="h">H</button>
+		<button data-key-value="j">J</button>
+		<button data-key-value="k">K</button>
+		<button data-key-value="l">L</button>
+		<button data-key-value=";" data-secondary-value=":">:<br>;</button>
+		<button data-key-value="'" data-secondary-value="&quot;">"<br>'</button>
+		<button class="return">return</button>
+	</div>
+	<div class="row">
+		<button class="shift">shift</button>
+		<button data-key-value="z">Z</button>
+		<button data-key-value="x">X</button>
+		<button data-key-value="c">C</button>
+		<button data-key-value="v">V</button>
+		<button data-key-value="b">B</button>
+		<button data-key-value="n">N</button>
+		<button data-key-value="m">M</button>
+		<button data-key-value="," data-secondary-value="&#60;">&#60;<br>,</button>
+		<button data-key-value="." data-secondary-value="&#62;">&#62;<br>.</button>
+		<button data-key-value="/" data-secondary-value="?">?<br>/</button>
+		<button class="shift">shift</button>
+	</div>
+	<div class="row">
+		<button>fn</button>
+		<button>ctrl</button>
+		<button>alt</button>
+		<button class="command">&#8984;</button>
+		<button class="spacebar" data-key-value=" "></button>
+		<button class="command">&#8984;</button>
+		<button>alt</button>
+		<div id="arrows">
+			<button class="left">&larr;</button>
+			<button class="up">&uarr;</button>
+			<button class="down">&darr;</button>
+			<button class="right">&rarr;</button>
+		</div>
+	</div>
+</div>
+
+<div id="info">Built by <a href="http://sutherlandboswell.com">Sutherland Boswell</a>, inspired by <a href="http://dribbble.com/shots/455602-Apple-Keyboard">Levi Wintering</a>.</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

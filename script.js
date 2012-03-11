@@ -1,30 +1,33 @@
 var text = $('span#text');
+var cursor = $("span#cursor");
 var shift = false;
+var shift_button = $('button.shift');
 var caps_lock = false;
+var caps_lock_button = $('button.caps-lock');
 
 function start_shift() {
 	shift = true;
-	$('button.shift').addClass('active');
+	shift_button.addClass('active');
 }
 
 function stop_shift() {
 	shift = false;
-	$('button.shift').removeClass('active');
+	shift_button.removeClass('active');
 }
 
 function start_caps_lock() {
 	caps_lock = true;
-	$('button.caps-lock').addClass('active');
+	caps_lock_button.addClass('active');
 }
 
 function stop_caps_lock() {
 	caps_lock = false;
-	$('button.caps-lock').removeClass('active');
+	caps_lock_button.removeClass('active');
 }
 
 function cursorAnimation()
 {
-  $("span#cursor").animate(
+  cursor.animate(
   {
     opacity: 0
   }, "fast", "swing").animate(
